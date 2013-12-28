@@ -1,0 +1,17 @@
+{
+  "name": "Steam Community Market Quick Buy",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://steamcommunity.com/market/listings/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "web_accessible_resources": ["quickbuy.js"],
+  "icons": {
+    "16": "16.png",
+    "48": "48.png",
+    "128": "128.png"
+  }
+}
